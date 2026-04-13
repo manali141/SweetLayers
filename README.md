@@ -48,4 +48,3 @@ This is a **frontend-only project** designed with modern UI, flexbox layouts, an
 
 ---
 
-## 📂 Project Structure
