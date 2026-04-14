@@ -92,7 +92,7 @@ a.nav-link:active{
 /* Home Page Middle Section After header */
 .hero {
     position: relative;
-    background: url(/Images/coverHomePage.png) center / cover no-repeat;
+    background: url(https://manali141.github.io/Images/coverHomePage.png) center / cover no-repeat;
     display: flex;
     
   align-items: center;
