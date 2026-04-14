@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Elegance",
+    "category": "Wedding",
+    "price": "$120",
+    "description": "A stunning three-tier vanilla bean cake with soft buttercream and fresh roses.",
+    "image": "https://2987f4e8-4402-44f6-a52d-0410a55b4f7c-00-29dpsxyxmtkz5.riker.replit.dev/images/cake-1.png",
+    "flavor": "Vanilla",
+    "rating": 4.8,
+    "altText":"Birthday Cake with Classic Elegance",
+    "isFeatured": true
+  },
+  {
+    "id": 2,
+    "name": "Chocolate Dream",
+    "category": "Birthday",
+    "price": "$80",
+    "description": "Rich chocolate cake layered with dark chocolate ganache.",
+    "image": "https://2987f4e8-4402-44f6-a52d-0410a55b4f7c-00-29dpsxyxmtkz5.riker.replit.dev/images/cake-2.png",
+    "flavor": "Chocolate",
+    "rating": 4.7,
+    "altText":"Birthday Cake with chocolate layer",
+    "isFeatured": true
+  },
+  {
+    "id": 3,
+    "name": "Strawberry Delight",
+    "category": "Anniversary",
+    "price": "$95",
+    "description": "Light sponge cake with fresh strawberries and whipped cream.",
+    "image": "https://2987f4e8-4402-44f6-a52d-0410a55b4f7c-00-29dpsxyxmtkz5.riker.replit.dev/images/cake-3.png",
+    "flavor": "Strawberry",
+    "rating": 4.6,
+    "altText":"Birthday Cake with Straeberry delight",
+    "isFeatured": false
+  },
+  {
+    "id": 4,
+    "name": "Red Velvet Love",
+    "category": "Special",
+    "price": "$110",
+    "description": "Moist red velvet cake with cream cheese frosting.",
+    "image": "https://2987f4e8-4402-44f6-a52d-0410a55b4f7c-00-29dpsxyxmtkz5.riker.replit.dev/images/cake-4.png",
+    "flavor": "Red Velvet",
+    "rating": 4.9,
+    "altText":"Birthday Cake with Red Velvet Love",
+    "isFeatured": true
+  },
+  {
+    "id": 5,
+    "name": "Black Forest",
+    "category": "Classic",
+    "price": "$90",
+    "description": "Chocolate sponge with cherries and whipped cream layers.",
+    "image": "https://2987f4e8-4402-44f6-a52d-0410a55b4f7c-00-29dpsxyxmtkz5.riker.replit.dev/images/cake-5.png",
+    "flavor": "Chocolate Cherry",
+    "rating": 4.5,
+    "altText":"Birthday Cake with Black Forest",
+    "isFeatured": false
+  }
+]
