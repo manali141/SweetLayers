@@ -89,10 +89,10 @@ a.nav-link:active{
   color:var(--primary);
 }
 
-/* Home Page Middle Section After header */
+/* Home Page Middle Section After header Images/coverHomePage.png */
 .hero {
     position: relative;
-    background: url(https://manali141.github.io/Images/coverHomePage.png) center / cover no-repeat;
+    background: url(https://manali141.github.io/SweetLayers/Images/coverHomePage.png) center / cover no-repeat;
     display: flex;
     
   align-items: center;
@@ -286,7 +286,7 @@ a.nav-link:active{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 20rem;
+    height: 10rem;
 }
 
 .menu-hero-content h1 {
@@ -318,4 +318,138 @@ input#Search {
 }
 input#Search:focus {
 border-color: #1e3a2f;
+}
+.MenucardDisplay {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 cards per row */
+  gap: 20px;
+  padding-bottom: 8rem
+}
+
+.category-footer {
+    padding: 15px;
+}
+
+.category-footer button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #ac5639;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.menuImage.category-image {
+    transition: transform 0.4s ease;
+}
+
+.menuImage.category-image img:hover {
+  transform: scale(1.1);
+}
+
+
+/* =========================
+   TABLET (<= 1024px)
+========================= */
+@media (max-width: 1024px) {
+  .cardDisplay {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .MenucardDisplay {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-content h1 {
+    font-size: 45px;
+  }
+}
+
+/* =========================
+   SMALL TABLET / LARGE MOBILE (<= 768px)
+========================= */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  nav.navbar.container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  /* HERO */
+  .hero {
+    height: 22rem;
+    padding: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  /* GRID */
+  .cardDisplay {
+    grid-template-columns: 1fr;
+  }
+
+  .MenucardDisplay {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* SEARCH BAR */
+  input#Search {
+    width: 90%;
+  }
+
+  /* FOOTER */
+  .footerContain {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+/* =========================
+   MOBILE (<= 480px)
+========================= */
+@media (max-width: 480px) {
+
+  .hero-content h1 {
+    font-size: 26px;
+  }
+
+  .hero-content p {
+    font-size: 13px;
+  }
+
+  .MenucardDisplay {
+    grid-template-columns: 1fr;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-hero-content h1 {
+    font-size: 28px;
+  }
 }

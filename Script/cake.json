@@ -4,7 +4,7 @@
     "name": "Classic Elegance",
     "category": "Wedding",
     "price": "$120",
-    "description": "A stunning three-tier vanilla bean cake with soft buttercream and fresh roses.",
+    "description": "A stunning vanilla bean cake with soft buttercream and fresh roses.",
     "image": "https://2987f4e8-4402-44f6-a52d-0410a55b4f7c-00-29dpsxyxmtkz5.riker.replit.dev/images/cake-1.png",
     "flavor": "Vanilla",
     "rating": 4.8,
@@ -50,13 +50,25 @@
   {
     "id": 5,
     "name": "Black Forest",
-    "category": "Classic",
+    "category": "CupCakes",
     "price": "$90",
     "description": "Chocolate sponge with cherries and whipped cream layers.",
     "image": "https://2987f4e8-4402-44f6-a52d-0410a55b4f7c-00-29dpsxyxmtkz5.riker.replit.dev/images/cake-5.png",
     "flavor": "Chocolate Cherry",
     "rating": 4.5,
     "altText":"Birthday Cake with Black Forest",
+    "isFeatured": false
+  },
+  {
+    "id": 6,
+    "name": "Velvet Ruby",
+    "category": "CupCakes",
+    "price": "$36",
+    "description": "Rich red velvet cupcakes topped with a smooth cream cheese frosting.",
+    "image": "https://2987f4e8-4402-44f6-a52d-0410a55b4f7c-00-29dpsxyxmtkz5.riker.replit.dev/images/cake-6.png",
+    "flavor": "Vanila",
+    "rating": 4.5,
+    "altText":"Birthday Cake with Vanila Bean Cloud",
     "isFeatured": false
   }
 ]

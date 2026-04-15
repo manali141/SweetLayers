@@ -1,4 +1,22 @@
-const menuElement = [];
+// Search Filter
+
+const inputData = document.querySelector("#Search")
+inputData.addEventListener("input",() => {
+  const serachValue = inputData.value.toLowerCase();
+  const filterCard = menuElement.filter((item) => 
+    item.name.toLowerCase().includes(serachValue) || item.category.toLowerCase().includes(serachValue) || item.category.toLowerCase().includes(serachValue)
+  )
+  menuData(filterCard);
+
+  if(filterCard.length == 0){
+    document.querySelector(".MenucardDisplay").innerHTML = `<p class="noData">No Data Found</p>`
+  }
+})
+
+
+
+
+let menuElement = [];
 
 // fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=cake")
 // .then(res => res.json())
@@ -7,17 +25,17 @@ const menuElement = [];
 //     menuData(cardElement);
 // })
 
-fetch("Script/cake.json")
+fetch("https://manali141.github.io/SweetLayers/Script/cake.json")
 .then(res => res.json())
 .then(data => {
     menuElement = data;
-    menuData(cardElement);
+    menuData(menuElement);
 })
 
 const menuData = (data) => {
     const cards = data.map((item) => 
     `<div class="category-card">
-      <div class="category-image">
+      <div class="menuImage category-image">
         <img src="${item.image}" alt="${item.altText}">
       </div>
       <div class="category-content">
@@ -25,9 +43,12 @@ const menuData = (data) => {
         <h3>${item.name}</h3>
         <p>${item.description}</p>
       </div>
+      <div class="category-footer">
+            <button>Order Now</button>
+      </div>
     </div>
     `
     ).join("");
-    document.querySelector(".cardDisplay").innerHTML = cards;
+    document.querySelector(".MenucardDisplay").innerHTML = cards;
 }
 menuData(menuElement);
