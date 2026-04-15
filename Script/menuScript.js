@@ -4,7 +4,7 @@ const inputData = document.querySelector("#Search")
 inputData.addEventListener("input",() => {
   const serachValue = inputData.value.toLowerCase();
   const filterCard = menuElement.filter((item) => 
-    item.name.toLowerCase().includes(serachValue) || item.category.toLowerCase().includes(serachValue) || item.category.toLowerCase().includes(serachValue)
+    item.name.toLowerCase().includes(serachValue) || item.category.toLowerCase().includes(serachValue) || item.description.toLowerCase().includes(serachValue)
   )
   menuData(filterCard);
 
@@ -40,7 +40,10 @@ const menuData = (data) => {
       </div>
       <div class="category-content">
         <h6>${item.category}</h6>
-        <h3>${item.name}</h3>
+        <div class="namePrice">
+          <h3>${item.name}</h3>
+          <span>${item.price}</span>
+        </div>
         <p>${item.description}</p>
       </div>
       <div class="category-footer">
