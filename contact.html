@@ -43,18 +43,72 @@
                 <form>
                     <div class="form-row">
                         <div class="col">
-                        <input type="text" class="form-control" placeholder="First name">
+                        <label for="fullName">Full Name*</label>
+                        <input type="text" name="fullName" required class="form-control" placeholder="Jane Doe">
                         </div>
                         <div class="col">
-                        <input type="text" class="form-control" placeholder="Last name">
+                          <label for="email">Email*</label>
+                        <input type="text" name="email" required class="form-control" placeholder="jane@example.com">
                         </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                        <label for="phone">Phone(Optional)</label>
+                        <input type="text" name="phone" class="form-control" placeholder="Phone(Optional)">
+                        </div>
+                        <div class="col">
+                           <label for="category">Cake Category</label>
+                        <select id="category" name="category" class="form-control" required>
+                          <option value="" disabled selected>Select a Category</option>
+                          <option value="1">Wedding Cake</option>
+                          <option value="2">Birthday Cake</option>
+                          <option value="3">Custom Design</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                        <label for="eventDate">Event Date*</label>
+                        <input type="date" name="eventDate" required class="form-control" placeholder="Pick a Date">
+                        </div>
+                        
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                        <label for="eventDate">Details & Requests</label>
+                        <textarea cols="10" rows="5" name="eventDate" class="form-control" placeholder="Tell us about design, flavors.."></textarea>
+                        
+                        </div>
+                    </div>
+                    <div>
+                      <button class="btnRequest" id="btnSubmit">Send Request</button>
+                      <div class="alert-container"></div>
                     </div>
                 </form>
             </div>
         </div>
 
         <div class="info">
-
+          <h2>Visit the Bakery</h2>
+            <div class="address">
+                <div class="iconTitle"><h4><i class="fa fa-map-marker" aria-hidden="true"></i>Address</h4></div>
+                <p>123 Yong Street</p>
+                <p>Toronto, M5W 2A7</p>
+            </div>
+            <div class="hours">
+                <div><h4><i class="fa fa-clock-o" aria-hidden="true"></i>Hours</h4></div>
+                <p>Mon - Fri:  10:00AM - 7:00PM</p>
+                <p>Sat: 8:00AM - 6:00PM</p>
+                <p>Sun: Closed</p>
+            </div>
+            <div class="Phone">
+              <div><h4><i class="fa fa-phone" aria-hidden="true"></i>Phone</h4></div>
+              <p>(555) 777-365</p>
+            </div>
+            <div class="emil">
+              <div><h4><i class="fa fa-envelope-o" aria-hidden="true"></i>Email</h4></div>
+              <p>hello@sweetlayers.com</p>
+            </div>
         </div>
     </section>
 
@@ -77,6 +131,20 @@
       </div>
     </div>
   </footer>
-  
+  <script type="text/javascript">
+    const btnSubmit = document.querySelector("#btnSubmit");
+    const alertContainer = document.querySelector(".alert-container");
+    btnSubmit.addEventListener("click", () => {
+      DisplayAlert();
+    });
+
+    function DisplayAlert(){
+      alertContainer.innerHTML = `<div class="alert-box">
+       <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+       <p><strong>Note:</strong> Order Submitted.</p>
+      </div>
+      `
+    }
+    </script>
 </body>
 </html>
