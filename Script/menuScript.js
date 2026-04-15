@@ -4,7 +4,10 @@ const inputData = document.querySelector("#Search")
 inputData.addEventListener("input",() => {
   const serachValue = inputData.value.toLowerCase();
   const filterCard = menuElement.filter((item) => 
-    item.name.toLowerCase().includes(serachValue) || item.category.toLowerCase().includes(serachValue) || item.description.toLowerCase().includes(serachValue)
+    item.name.toLowerCase().includes(serachValue) 
+  || item.category.toLowerCase().includes(serachValue) 
+  || item.description.toLowerCase().includes(serachValue)
+  || item.price.toLowerCase().includes(serachValue)
   )
   menuData(filterCard);
 
