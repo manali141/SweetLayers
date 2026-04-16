@@ -38,16 +38,39 @@
 
 <section class="Menugrid container">
   <div class="feature">
+    
     <div class="searchBar">
-      <input type="textbox" name="Search" id="Search" class="txtSearch" placeholder="Search.."/>
+      <input 
+        type="text" 
+        name="Search" 
+        id="Search" 
+        class="txtSearch" 
+        placeholder="Search cakes..."
+      />
     </div>
-    
-  </div>
-  <div class="MenucardDisplay">
-    
-  </div>
-</section>
 
+    <div class="filterSection">
+      <select id="categoryFilter" class="filterSelect">
+        <option value="all">All Categories</option>
+        <option value="birthday">Birthday Cakes</option>
+        <option value="wedding">Wedding Cakes</option>
+        <option value="cupcake">Cupcakes</option>
+        <option value="chocolate">Chocolate Cakes</option>
+        <option value="eggless">Eggless Cakes</option>
+      </select>
+
+      <select id="sortPrice" class="filterSelect">
+        <option value="default">Sort By Price</option>
+        <option value="lowToHigh">Price: Low to High</option>
+        <option value="highToLow">Price: High to Low</option>
+      </select>
+      
+    </div>
+
+  </div>
+
+  <div class="MenucardDisplay"></div>
+</section>
    
 
   <footer class="footer">

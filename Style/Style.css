@@ -168,6 +168,8 @@ a.nav-link:active{
 .featureRight a {
   cursor: pointer;
   font-weight: 600;
+  text-decoration: none;
+  color: #8B6F61;
 }
 
 /* Buttons */
@@ -236,6 +238,21 @@ a.nav-link:active{
     background-color: #c76b4f; /* your theme color */
     margin: 10px auto 20px; /* center + spacing */
     border-radius: 5px;
+}
+
+.filterSection {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.filterSelect {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  outline: none;
 }
 
 /* Footer Css Start */

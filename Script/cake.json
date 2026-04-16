@@ -61,14 +61,50 @@
   },
   {
     "id": 6,
-    "name": "Velvet Ruby",
+    "name": "Vanilla Bean Cloud",
     "category": "CupCakes",
-    "price": "$36",
-    "description": "Rich red velvet cupcakes topped with a smooth cream cheese frosting.",
+    "price": "$50",
+    "description": "Classic Madagascar vanilla bean cupcakes with a fluffy buttercream swirl.",
     "image": "https://www.themealdb.com/images/media/meals/xlqqhw1764369924.jpg",
     "flavor": "Vanila",
     "rating": 4.5,
     "altText":"Birthday Cake with Vanila Bean Cloud",
+    "isFeatured": false
+  },
+  {
+    "id": 7,
+    "name": "Velvet Ruby",
+    "category": "CupCakes",
+    "price": "$36",
+    "description": "Rich red velvet cupcakes topped with a smooth cream cheese frosting.",
+    "image": "https://www.themealdb.com/images/media/meals/ldnrm91576791881.jpg",
+    "flavor": "Vanila",
+    "rating": 4.5,
+    "altText":"Birthday Cake with Vanila Bean Cloud",
+    "isFeatured": false
+  },
+  {
+    "id": 8,
+    "name": "Autumn Spice",
+    "category": "Wedding",
+    "price": "$30",
+    "description": "Warm spiced pumpkin cake with maple cream cheese frosting and cinnamon.",
+    "image": "https://www.themealdb.com/images/media/meals/tzt3it1764363293.jpg",
+    "flavor": "Vanila",
+    "rating": 4.5,
+    "altText":"Wedding Cake with Vanila Bean Cloud",
+    "isFeatured": false
+  },
+  {
+    "id": 9,
+    "name": "Rustic Floral",
+    "category": "Birthday",
+    "price": "$60",
+    "description": "Semi-naked design adorned with fresh wildflowers and a touch of honey",
+    "image": "https://www.themealdb.com/images/media/meals/xvgpng1764121726.jpg",
+    "flavor": "Chocolate",
+    "rating": 4.5,
+    "altText":"Birthday Cake with Chocolate",
     "isFeatured": false
   }
 ]
