@@ -50,7 +50,7 @@
   {
     "id": 5,
     "name": "Black Forest",
-    "category": "CupCakes",
+    "category": "Cupcakes",
     "price": "$90",
     "description": "Chocolate sponge with cherries and whipped cream layers.",
     "image": "https://www.themealdb.com/images/media/meals/qxutws1486978099.jpg",
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "Vanilla Bean Cloud",
-    "category": "CupCakes",
+    "category": "Cupcakes",
     "price": "$50",
     "description": "Classic Madagascar vanilla bean cupcakes with a fluffy buttercream swirl.",
     "image": "https://www.themealdb.com/images/media/meals/xlqqhw1764369924.jpg",
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "Velvet Ruby",
-    "category": "CupCakes",
+    "category": "Cupcakes",
     "price": "$36",
     "description": "Rich red velvet cupcakes topped with a smooth cream cheese frosting.",
     "image": "https://www.themealdb.com/images/media/meals/ldnrm91576791881.jpg",

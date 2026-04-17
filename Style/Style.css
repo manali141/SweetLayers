@@ -45,6 +45,20 @@ a.logoLink {
    
     list-style: none;
 }
+nav.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+  width: 100%;
+}
+
+nav.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
 
 /* nav.navbar.container {
     display: flex;
@@ -407,7 +421,9 @@ section#contact-us {
 }
 
 .info {
-    width: 420px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 420px;
     padding: 2.5rem;
     background-color: #f7f4f1;
     border-radius: 10px;
@@ -541,7 +557,18 @@ button.btnRequest {
 .alert-box strong {
   color: #3b2f2f;
 }
+.btn,
+.category-footer button,
+button.btnRequest {
+  transition: all 0.3s ease;
+}
 
+.btn:hover,
+.category-footer button:hover,
+button.btnRequest:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
 
 /* =========================
    TABLET (<= 1024px)
@@ -613,6 +640,14 @@ button.btnRequest {
     gap: 20px;
     text-align: center;
     align-items: center;
+  }
+  #contact-us {
+    flex-direction: column;
+  }
+
+  .info {
+    width: 100%;
+    max-width: 100%;
   }
 }
 

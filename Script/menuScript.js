@@ -1,20 +1,74 @@
 // Search Filter
 
 const inputData = document.querySelector("#Search")
-inputData.addEventListener("input",() => {
-  const serachValue = inputData.value.toLowerCase();
-  const filterCard = menuElement.filter((item) => 
-    item.name.toLowerCase().includes(serachValue) 
-  || item.category.toLowerCase().includes(serachValue) 
-  || item.description.toLowerCase().includes(serachValue)
-  || item.price.toLowerCase().includes(serachValue)
-  )
-  menuData(filterCard);
+const categoryFilter = document.querySelector("#categoryFilter");
+const sortPrice = document.querySelector("#sortPrice");
 
-  if(filterCard.length == 0){
+function filterAndSortData() {
+  let filterData = [...menuElement];
+
+  //Serach Filter
+  const searchvalue = inputData.value.toLowerCase();
+  debugger;
+  if (searchvalue !== null && searchvalue != "") {
+    filterData = filterData.filter(item =>
+      item.name.toLowerCase().includes(serachValue)
+      || item.category.toLowerCase().includes(serachValue)
+      || item.description.toLowerCase().includes(serachValue)
+
+    );
+  }
+
+  //Category Filter
+  const selectedCategory = categoryFilter.value.toLowerCase();
+  
+  if (selectedCategory !== null && selectedCategory !== "" && selectedCategory!== "all") {
+    filterData = filterData.filter(item =>
+      
+      item.category.toLowerCase() === selectedCategory
+    );
+  }
+  debugger;
+  //SortBy price
+  const selectedSort = sortPrice.value;alert(selectedSort);
+  if(selectedSort !== null && selectedSort !== ""){
+    if(selectedSort === "lowToHigh"){
+      filterData.sort((a, b) => 
+    parseFloat(a.price.replace("$", "")) - parseFloat(b.price.replace("$", ""))
+  );}
+    else if(selectedSort === "highToLow")
+    {
+      filterData.sort((a, b) => 
+    parseFloat(b.price.replace("$", "")) - parseFloat(a.price.replace("$", ""))
+  );
+    }
+  }
+
+  //Sort Filter
+  menuData(filterData);
+  if (filterData.length == 0) {
     document.querySelector(".MenucardDisplay").innerHTML = `<p class="noData">No Data Found</p>`
   }
-})
+
+}
+inputData.addEventListener("input", filterAndSortData);
+categoryFilter.addEventListener("change", filterAndSortData);
+sortPrice.addEventListener("change", filterAndSortData);
+
+// inputData.addEventListener("input",() => {
+//   const serachValue = inputData.value.toLowerCase();
+//   const filterCard = menuElement.filter((item) => 
+//     item.name.toLowerCase().includes(serachValue) 
+//   || item.category.toLowerCase().includes(serachValue) 
+//   || item.description.toLowerCase().includes(serachValue)
+//   || item.price.toLowerCase().includes(serachValue)
+//   )
+//   menuData(filterCard);
+
+//   if(filterCard.length == 0){
+//     document.querySelector(".MenucardDisplay").innerHTML = `<p class="noData">No Data Found</p>`
+//   }
+// })
 
 
 
@@ -29,14 +83,14 @@ let menuElement = [];
 // })
 
 fetch("https://manali141.github.io/SweetLayers/Script/cake.json")
-.then(res => res.json())
-.then(data => {
+  .then(res => res.json())
+  .then(data => {
     menuElement = data;
     menuData(menuElement);
-})
+  })
 
 const menuData = (data) => {
-    const cards = data.map((item) => 
+  const cards = data.map((item) =>
     `<div class="category-card">
       <div class="menuImage category-image">
         <img src="${item.image}" alt="${item.altText}">
@@ -54,7 +108,7 @@ const menuData = (data) => {
       </div>
     </div>
     `
-    ).join("");
-    document.querySelector(".MenucardDisplay").innerHTML = cards;
+  ).join("");
+  document.querySelector(".MenucardDisplay").innerHTML = cards;
 }
 menuData(menuElement);
