@@ -9,12 +9,12 @@ function filterAndSortData() {
 
   //Serach Filter
   const searchvalue = inputData.value.toLowerCase();
-  debugger;
+  //debugger;
   if (searchvalue !== null && searchvalue != "") {
     filterData = filterData.filter(item =>
-      item.name.toLowerCase().includes(serachValue)
-      || item.category.toLowerCase().includes(serachValue)
-      || item.description.toLowerCase().includes(serachValue)
+      item.name.toLowerCase().includes(searchvalue)
+      || item.category.toLowerCase().includes(searchvalue)
+      || item.description.toLowerCase().includes(searchvalue)
 
     );
   }
@@ -30,7 +30,7 @@ function filterAndSortData() {
   }
   debugger;
   //SortBy price
-  const selectedSort = sortPrice.value;alert(selectedSort);
+  const selectedSort = sortPrice.value;
   if(selectedSort !== null && selectedSort !== ""){
     if(selectedSort === "lowToHigh"){
       filterData.sort((a, b) => 
